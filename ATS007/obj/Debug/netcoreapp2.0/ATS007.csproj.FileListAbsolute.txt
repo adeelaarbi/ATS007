@@ -1,0 +1,11 @@
+C:\Users\Bashir\source\repos\ATS007\ATS007\bin\Debug\netcoreapp2.0\ATS007.deps.json
+C:\Users\Bashir\source\repos\ATS007\ATS007\bin\Debug\netcoreapp2.0\ATS007.runtimeconfig.json
+C:\Users\Bashir\source\repos\ATS007\ATS007\bin\Debug\netcoreapp2.0\ATS007.runtimeconfig.dev.json
+C:\Users\Bashir\source\repos\ATS007\ATS007\bin\Debug\netcoreapp2.0\ATS007.dll
+C:\Users\Bashir\source\repos\ATS007\ATS007\bin\Debug\netcoreapp2.0\ATS007.pdb
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.csprojAssemblyReference.cache
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.csproj.CoreCompileInputs.cache
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.AssemblyInfoInputs.cache
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.AssemblyInfo.cs
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.dll
+C:\Users\Bashir\source\repos\ATS007\ATS007\obj\Debug\netcoreapp2.0\ATS007.pdb

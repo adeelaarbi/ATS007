@@ -1,0 +1,13 @@
+﻿@{ 
+    ViewBag.Title = "Home Page";
+}
+
+@section Styles {
+    @await Html.PartialAsync("_IndexCssPartial")
+}
+
+<h3>Welcom @ViewBag.Title</h3>
+
+@section Scripts {
+    @await Html.PartialAsync("_IndexScriptsPartial")
+}
