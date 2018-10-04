@@ -1,0 +1,176 @@
+﻿@model EmployeeCreateViewModel
+@{
+    ViewData["Title"] = "New Employee";
+}
+
+<div class="x_panel">
+    <div class="x_title">
+        <h2>@ViewData["Title"] <small></small></h2>
+        <ul class="nav navbar-right panel_toolbox">
+            <li>
+                <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="#">Settings 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Settings 2</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="close-link"><i class="fa fa-close"></i></a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <form class="form-horizontal " asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="EmployeeCode" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="EmployeeCode" class="form-control" />
+                    <span asp-validation-for="EmployeeCode" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PINCode" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="PINCode" class="form-control" />
+                    <span asp-validation-for="PINCode" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nationality" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="Nationality" class="form-control" />
+                    <span asp-validation-for="Nationality" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <select asp-for="Gender" class="form-control">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaritalStatus" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <select asp-for="MaritalStatus" class="form-control">
+                        <option value="single" selected>Single</option>
+                        <option value="maried">Maried</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="POBox" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="POBox" class="form-control" />
+                    <span asp-validation-for="POBox" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactNo" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="ContactNo" class="form-control" />
+                    <span asp-validation-for="ContactNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="MobileNo" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="MobileNo" class="form-control" />
+                    <span asp-validation-for="MobileNo" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassportNo" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="PassportNo" class="form-control" />
+                    <span asp-validation-for="PassportNo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="PassportIssueDate" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="PassportIssueDate" class="form-control" />
+                    <span asp-validation-for="PassportIssueDate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassportExpiryDate" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="PassportExpiryDate" class="form-control" />
+                    <span asp-validation-for="PassportExpiryDate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOfBirth" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="DateOfBirth" class="form-control" />
+                    <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PassportPlaceOfIssue" class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <input asp-for="PassportPlaceOfIssue" class="form-control" />
+                    <span asp-validation-for="PassportPlaceOfIssue" class="text-danger"></span>
+                </div>
+            </div>
+            
+            
+
+            <div class="ln_solid"></div>
+            <div class="form-group">
+                <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
